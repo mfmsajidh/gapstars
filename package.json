@@ -5,15 +5,18 @@
   "private": true,
   "main": "src/index.js",
   "author": "Sajidh Farook",
+  "type": "module",
   "engines": {
     "node": ">=18.12.1"
   },
   "scripts": {
-    "start": "nodemon --trace-warnings src/index.js"
+    "start": "nodemon --trace-warnings src/index.js --greeting=Hello --who=You --width=400 --height=500 --color=Pink --size=100",
+    "deploy": "node src/index.js --greeting=Dear --who=Me --width=400 --height=500 --color=Pink --size=100"
   },
   "dependencies": {
-    "minimist": "^1.2.7",
-    "node-fetch": "^3.2.10"
+    "axios": "^1.1.3",
+    "merge-img": "^2.1.3",
+    "minimist": "^1.2.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
