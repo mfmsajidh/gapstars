@@ -1,0 +1,21 @@
+{
+  "name": "gapstars",
+  "version": "0.0.1",
+  "description": "Gapstars code optimization task",
+  "private": true,
+  "main": "src/index.js",
+  "author": "Sajidh Farook",
+  "engines": {
+    "node": ">=18.12.1"
+  },
+  "scripts": {
+    "start": "nodemon --trace-warnings src/index.js"
+  },
+  "dependencies": {
+    "minimist": "^1.2.7",
+    "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
